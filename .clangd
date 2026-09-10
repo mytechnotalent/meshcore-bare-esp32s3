@@ -1,0 +1,20 @@
+CompileFlags:
+  Add:
+    - -D__XTENSA__
+    - -Wno-unknown-warning-option
+    - -isystem/Users/kevinthomas/.platformio/packages/toolchain-xtensa-esp-elf/xtensa-esp-elf/include
+    - -isystem/Users/kevinthomas/.platformio/packages/toolchain-xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include
+  Remove:
+    - -mlongcalls
+    - -fno-shrink-wrap
+    - -fno-tree-switch-conversion
+    - -fstrict-volatile-bitfields
+    - -Wno-old-style-declaration
+
+Diagnostics:
+  UnusedIncludes: None
+  MissingIncludes: None
+  Suppress:
+    - unused-includes
+    - -Wunknown-warning-option
+
